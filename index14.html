@@ -89,7 +89,8 @@
     padding: 16px;
     border: none;
     cursor: pointer;
-    width: 100vw; /* This may need to be adjusted based on your layout */
+    width: 50vw; /* This may need to be adjusted based on your layout */
+	margin: 0 50%;
 }
 
 .dropdown-content {
@@ -105,6 +106,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     grid-gap: 20px; /* Space between grid items */
+	width: 100vw;
 }
 
 .dropdown-content div {
@@ -123,11 +125,13 @@
     display: grid; /* Show on hover */
 }
 
-@media (max-width: 375.98px) { 
+@media (max-width: 500px) { 
 .dropdown-content {
 	font-size:12px;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-gap: 10px; /* Space between grid items */
+    width: 100%vw;
+}
 }
 
 }
